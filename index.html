@@ -1,27 +1,14 @@
 <!DOCTYPE html>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-103652698-6"></script>
 <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'UA-103652698-6');
+</script>
 
-      function randomScript() {
-        var script = document.querySelectorAll("script");
-        var count = Math.floor(Math.random() * (2 - 1 + 1) + 1);
-        var s = document.createElement("script");
-        var id = '';
-        s.type = "text/javascript";
-        if(count  == 1){ 
-          s.src = "https://www.googletagmanager.com/gtag/js?id=UA-103652698-6";
-          id = 'UA-103652698-6';
-          }else{
-            s.src = "https://www.googletagmanager.com/gtag/js?id=UA-103652698-6";
-            id = 'UA-103652698-6';
-        }
-        $("head").append(s);    
-        $('head').append("<script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);}gtag('js', new Date());  gtag('config', '"+id+"');<\/script>");
-      }
-      window.onload = randomScript;
-    
-    
-      </script>
 
 
 <html style="font-size: 16px;" lang="en"><head>
